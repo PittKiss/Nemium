@@ -1,0 +1,71 @@
+:root{
+  font-size: 18px;
+  --gris10: #616161;
+  --gris20: #212929;
+  --gris30: #212121;
+  font-family: 'Roboto', sans-serif;
+}
+html{
+  font-size: 15px;
+}
+header {
+  background: #000000;
+  width: 50vw;
+}
+header nav summary{
+  color: white;
+  font-weight: bold;
+}
+header nav summary:hover{
+  color: rgb(0, 255, 0);
+}
+header nav a {
+  color: #616161;
+  text-decoration: none;
+}
+header nav a:hover{
+  color: red;
+  text-decoration: none;
+}
+body {
+  color: var(--gris);
+}
+a {
+  color: #ff0000;
+}
+h1  {
+  font-size: 3rem;
+}
+h2{
+  font-size: 2em;
+}
+pre{
+  background: #FEC62E;
+}
+.hero{
+  background-image: linear-gradient(to top, rgba(255, 255, 255, .3), transparent), url("/images/patron-1.svg");
+  /* background: url("/images/patron-1.svg"); */
+  /* background-repeat: no-repeat;
+  background-position: left 50px top 100px;
+  background-size: cover; */
+  height: 350px;
+}
+.section-content h3{
+  counter-increment: titleList;
+}
+.section-content h3::before {
+  content: "" counter(titleList, decimal) ".-";
+}
+.section-content h3::after{
+content: "";
+width: 32px;
+height: 4px;
+background: red;
+display: block;
+}
+
+::selection {
+  background: #FEC62E;
+  color: rgb(0, 0, 0);
+}
+
