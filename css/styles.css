@@ -25,12 +25,12 @@ body {
   margin: auto;
 }
 
-.header{
+.header {
   position: sticky;
   top: 0px;
 }
 
-.header-content{
+.header-content {
   position: relative;
 }
 
@@ -150,6 +150,42 @@ a {
   color: var(--gris30);
 }
 
+.form input {
+  display: inline-block;
+  inline-size: 280px;
+  block-size: 48px;
+  box-sizing: border-box;
+  border: 1px solid black;
+  border-radius: 90px;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  color: var(--gris20);
+  padding-inline-start: 16px;
+  padding-inline-end: 16px;
+  padding-block-start: 12px;
+  padding-block-end: 12px;
+  margin-inline-end: 16px;
+  margin-block-end: 64px;
+}
+
+.form{
+  position: relative;
+}
+
+.form input[type="submit"] {
+  inline-size: 120px;
+  background: black;
+  color: white;
+  padding-inline: 16px;
+  padding-block: 12px;
+  position: absolute;
+  left: 483px;
+}
+
+.form input[type="submit"]:hover {
+  background: #212121;
+}
 
 ::selection {
   background: #FEC62E;
