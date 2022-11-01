@@ -17,7 +17,7 @@ body {
 
 .hero {
   background-image: linear-gradient(to top, rgba(255, 255, 255, .3), transparent), url("/images/patron-1.svg");
-  height: 350px;
+  height: 50px;
 }
 
 .wrapper {
@@ -26,19 +26,10 @@ body {
 }
 
 .header {
-  position: sticky;
-  top: 0px;
+ margin-block-start: 30px;
 }
 
 .header-content {
-  position: relative;
-}
-
-header {
-  width: 208px;
-  position: absolute;
-  top: 64px;
-  left: -224px;
 
 }
 
@@ -180,7 +171,7 @@ a {
   padding-inline: 16px;
   padding-block: 12px;
   position: absolute;
-  left: 483px;
+  inset-inline-start:500px;
 }
 
 .form input[type="submit"]:hover {
@@ -194,4 +185,25 @@ a {
 
 .debug {
   outline: 1px solid red;
+}
+
+@media screen and (min-width:1365px){
+  .hero {
+      height: 350px;
+    }
+
+  .header {
+      position: sticky;
+      top: 0px;
+    }
+
+    .header-content {
+      position: relative;
+    }
+header {
+  width: 208px;
+  position: absolute;
+  top: 64px;
+  left: -224px;
+}
 }
